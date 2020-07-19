@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--Подключаем шрифт-->
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,500&amp;subset=cyrillic"
+      rel="stylesheet">
+    <!--Normalize  служит для того,чтобы все стили в браузерах смотрелись одинакого-->
+    <!--Подключаем стили-->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <!--Верхушка сайта-->
+
+      <div class="header__top">
+        <!--Создаем контэйнер с ссылками-->
+
+        <div class="container">
+          <div class="header__contacts">
+            <a class="header__phone" href="tel:+37377840900">+373 778 40 900</a>
+            <a class="header__email"
+              href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">egor.stavnich@gmail.com</a>
+            <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">Обратная связь</a>
+          </div>
+        </div>
+      </div>
+      <!--Шапка с менюшками-->
+
+      <div class="header__content">
+        <div class="container">
+          <div class="header__content-inner">
+            <!--ЛОГОТИП-->
+
+            <div class="header__logo">
+              <a href="#">
+                <!--Готовить может каждый!-->
+
+                <img src="img/LOGO2.png" alt="">
+              </a>
+            </div>
+            <!--Настраиваем рабочие менюшки-->
+
+            <nav class="menu">
+              <div class="header__btn-menu">
+                <span class="icon-bars"></span>
+              </div>
+              <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="recipes.html">Рецепты</a></li>
+                <li><a href="cooks.html">Повара</a></li>
+                <li><a href="me.html">О себе</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Слайдер-->
+
+    <section class="slider">
+      <div class="container">
+        <div class="slider__inner">
+          <div class="slider__item">
+            <div class="slider__item-content">
+              <div class="slider__title">
+                15 МИНУТНЫЕ РЕЦЕПТЫ
+              </div>
+              <div class="slider__text">
+                В кулинарии может не хватать только аппетита.
+              </div>
+              <a data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default-btn">
+                Связаться
+              </a>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__item-content">
+              <div class="slider__title">
+                ДЕСЕРТЫ
+              </div>
+              <div class="slider__text">
+                Каждый может готовить, но здесь есть магия.
+              </div>
+              <a data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default-btn">
+                Связаться
+              </a>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__item-content">
+              <div class="slider__title">
+                НАПИТКИ
+              </div>
+              <div class="slider__text">
+                Умение искусно сервировать и красиво подавать на стол — не менее важная процедура, чем само
+                приготовление.
+              </div>
+              <a data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default-btn">
+                Связаться
+              </a>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__item-content">
+              <div class="slider__title">
+                ДОМАШНЕЕ МОРОЖЕНОЕ
+              </div>
+              <div class="slider__text">
+                Я всегда говорил, что если человек умеет читать, то и готовить он тоже научится.
+              </div>
+              <a data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default-btn">
+                Связаться
+              </a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!--Лента новостей-->
+
+    <section class="services">
+      <div class="container">
+        <div class="services__top">
+          <div class="services__title-box">
+            <div class="services__title">
+              Новости кулинарии
+            </div>
+            <div class="services__text">
+              Комплексный подход к вашему вопросу, своевременная правовую помощь, представление интересов во всех
+              судебных
+              инстанциях.
+            </div>
+          </div>
+          <div class="services__btn">
+            <a href="news.html">
+              Показать все новости
+            </a>
+          </div>
+        </div>
+        <!--Настраиваем блоки новостные-->
+
+        <div class="services__items">
+          <div class="services__item">
+            <img src="img/about-1.png" alt="">
+            <div class="services__item-title">
+              Японская пивоварня превращает нераспроданное пиво в джин.
+            </div>
+            <div class="services__item-text">
+              Японская пивоварня Kiuchi, расположенная в городе Нака (префектура Ибараки) придумала способ утилизации
+              нераспроданного
+              пива, оставшегося в местных барах и ресторанах во время карантина, и его последующего выгодного
+              использования...
+            </div>
+            <div class="services__item-btn">
+              <a class="services__item-link" href="news.html">Подробнее</a>
+              <a data-fancybox data-src="#modal" href="javascript:;" class="default-btn">
+                Задать вопрос
+              </a>
+            </div>
+          </div>
+          <div class="services__item">
+            <img src="img/about-2.png" alt="">
+            <div class="services__item-title">
+              Игрушечные панды в тайском ресторане напомнят людям о социальной дистанции.
+            </div>
+            <div class="services__item-text">
+              Ресторанам во всем мире, постепенно открывающимся после карантина, приходится придумывать различные
+              хитрости...
+            </div>
+            <div class="services__item-btn">
+              <a class="services__item-link" href="news.html">Подробнее</a>
+              <a data-fancybox data-src="#modal" href="javascript:;" class="default-btn">
+                Задать вопрос
+              </a>
+            </div>
+          </div>
+          <div class="services__item">
+            <img src="img/about-3.png" alt="">
+            <div class="services__item-title">
+              Рэпер Снуп Догг выпустит вино этим летом.
+            </div>
+            <div class="services__item-text">
+              Знаменитый американский рэпер Снуп Догг (Snoop Dogg) совместно с австралийским винным брендом 19 Crimes
+              выпустит
+              собственное вино...
+            </div>
+            <div class="services__item-btn">
+              <a class="services__item-link" href="news.html">Подробнее</a>
+              <a data-fancybox data-src="#modal" href="javascript:;" class="default-btn">
+                Задать вопрос
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__title">
+            Обо мне
+          </div>
+          <div class="about__text">
+            Практически каждый взрослый человек способен приготовить какое-нибудь блюдо (хотя бы пожарить яичницу или
+            сварить
+            пельмени). Многие (причем не только женщины, но и мужчины) относятся к приготовлению пищи очень серьезно,
+            регулярно
+            радуя своих домашних собственноручно приготовленными лакомствами. Однако разница между такой готовкой
+            любительского
+            уровня и профессиональным приготовлением пищи для большого количества взыскательных потребителей громадна.
+            Эта профессия
+            была востребована всегда. Она остается одной из самых дефицитных и в наше время. Хороший повар всегда найдет
+            себе
+            работу.
+          </div>
+          <a href="#" class="about__btn default-btn">
+            Узнать больше
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="form">
+      <div class="container">
+        <div class="form__inner">
+          <div class="form__content">
+            <div class="form__title-box">
+              <div class="form__title">
+
+                Получить Консультацию
+              </div>
+              <div class="form__text">
+                Комплексный подход к вашему вопросу,быстрый ответ,мотивация.
+              </div>
+            </div>
+            <div class="form__box">
+              <form>
+                <div class="form__box-inner">
+                  <div class="form__box-left">
+                    <label>
+                      E-mail
+                      <input type="text">
+                    </label>
+                    <label>
+                      Контактный телефон
+                      <input type="text">
+                    </label>
+                    <label>
+                      ФИО
+                      <input type="text">
+                    </label>
+
+                  </div>
+                  <div class="form__box-right">
+                    <label>
+                      Сообщение
+                      <textarea></textarea>
+                    </label>
+                    <button class="default-btn" type="submit">Получить консультацию</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="container">
+        <div class="advantages__inner">
+          <div class="advantages-item">
+            <div class="advantages__title">
+              БЫСТРО
+            </div>
+            <div class="advantages__text">
+              Это был мой первый кулинарный опыт. Интересно, сколько надо жарить рыбу? Ответ пришел сам: если хорошо
+              проголодаться,
+              как и сколько ни жарь — все равно вкусно!
+            </div>
+          </div>
+          <div class="advantages-item">
+            <div class="advantages__title">
+              ВКУСНО
+            </div>
+            <div class="advantages__text">
+              Умение искусно сервировать и красиво подавать на стол — не менее важная процедура, чем само приготовление.
+            </div>
+          </div>
+          <div class="advantages-item">
+            <div class="advantages__title">
+              НЕ ДОРОГО
+            </div>
+            <div class="advantages__text">
+              Не откладывай до ужина того, что можешь съесть за обедом.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news">
+      <div class="container">
+        <div class="news__top">
+          <div class="news__title-box">
+            <div class="news__title">
+              Повара
+            </div>
+            <div class="news__text">
+              Профессия повара — очень древняя. Первые повара готовили кушанья для знатных людей еще в Древнем Египте. И
+              за это время,
+              конечно, накопилось множество самых разных удивительных фактов из мира кулинарии.
+            </div>
+          </div>
+          <div class="news__btn">
+            <a href="#">
+              Посмотреть всех поваров
+            </a>
+          </div>
+        </div>
+        <div class="news__inner">
+          <div class="news__slider">
+            <div class="news__slider-inner">
+              <div class="news__slider-item">
+                <div class="news__slider-title">
+                  Алан Вонг
+                </div>
+                <div class="news__slider-text">
+                  «Не самый известный, но самый богатый шеф-повар, включенный в список «Форбс», — его состояние
+                  оценивается в полтора
+                  миллиарда долларов! Вонг — владелец всего трех ресторанов: два заведения в США и одно в Японии. Но
+                  очередь из желающих в
+                  них попасть формируется за несколько месяцев. Это неудивительно, ведь Алан — любимый повар Барака
+                  Обамы, а его
+                  гастрономическую фиесту, луау, устраивали в Белом доме. Юный Вонг изучал кулинарию в колледже, сразу
+                  поняв, что кухня —
+                  его призвание....»
+                </div>
+
+              </div>
+              <div class="news__slider-item">
+                <div class="news__slider-title">
+                  Гордон Рамзи
+                </div>
+                <div class="news__slider-text">
+                  «Кто же не знает Гордона Рамзи, всемирно известного шеф-повара, удостоившегося трех звезд Мишлен!
+                  «Адская кухня», «Лучший
+                  повар Америки», другие шоу, целая сеть ресторанов по всему миру и 118 миллионов долларов ежегодного
+                  дохода — это все о
+                  нем. Кроме того, Рамзи еще и счастливый муж и многодетный отец — он воспитывает двух дочерей и сына.
+                  Рамзи славится
+                  острым языком, его язвительные комментарии давно разобрали на цитаты. «Моя работа как шеф-повара
+                  заключается в том, что
+                  узнать как можно больше. Знаете, мне трудно есть горелое и недосоленное. Поэтому с открытым сердцем я
+                  готов съесть все
+                  что угодно — от желеобразных угрей до бобов на тосте. Я съем все, что угодно, если это нормально
+                  посолили», — говорит
+                  Гордон.»
+                </div>
+
+              </div>
+              <div class="news__slider-item">
+                <div class="news__slider-title">
+                  Джейми Оливер
+                </div>
+                <div class="news__slider-text">
+                  «Знаменитый британский шеф-повар и ресторатор Джейми Оливер зарабатывает более 250 миллионов долларов
+                  в год.
+                  Харизматичный и остроумный, он стал практически лицом большой кулинарии и, можем заметить,
+                  популяризовал профессию
+                  повара. Помимо всего прочего (а все прочее — это множество телешоу, собственноручно написанные книги,
+                  благотворительность), он является примерным семьянином: вместе с женой Джульет (с которой они вместе
+                  более 20 лет) он
+                  воспитывает пятерых детей! Нам интересно, когда он все успевает?...»
+                </div>
+
+              </div>
+              <div class="news__slider-item">
+                <div class="news__slider-title">
+                  Вольфганг Пак
+                </div>
+                <div class="news__slider-text">
+                  «Любимец Голливуда — это про него. Именно 67-летний Вольфганг Пак готовит фуршеты и праздничные
+                  застолья для афтер-пати
+                  «Оскара». Подозреваем, что знаменитости хотят попасть на церемонию не столько из-за заветной
+                  статуэтки, а для того,
+                  чтобы отведать фирменные блюда шефа! Куриный пирог в горшке, мини-бургеры с сыром чеддер, канапе с
+                  копченым лососем,
+                  статуэтки «Оскара» из шоколада в золотой глазури… Говорят, что Адель и Джон Траволта без ума от пасты
+                  с сыром, которую
+                  мастерски исполняет Пак. Предлагаем приобщиться к высокой кулинарии и приготовить кростини с козьим
+                  сыром — это вкусно!...»
+                </div>
+
+              </div>
+              <div class="news__slider-item">
+                <div class="news__slider-title">
+                  Ален Дюкасс
+                </div>
+                <div class="news__slider-text">
+                  «Дюкасс — самый титулованный шеф-повар, на его счету высокая награда Франции — орден Почетного
+                  легиона, а также три
+                  Мишленовских звезды. Его учениками являются десятки знаменитых шефов, в его рестораны запись ведется
+                  на много месяцев
+                  вперед, а книги Алена о высокой кухне популярны во всем мире. Дюкасс — пример сочетания таланта
+                  шеф-повара с
+                  коммерческой дальновидностью и креативностью. Дюкасс давно признался, что блюда из овощей — его конек.
+                  Мы поддерживаем
+                  Алена — это и вкусно, и полезно, поэтому предлагаем вам рецепт, основным ингредиентом которого
+                  выступает самая
+                  обыкновенная морковь. Итак…»
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <a class="news__blog">
+            <div class="news__images">
+              <img src="img/news-1.jpg" alt="">
+
+            </div>
+            <div class="news__blog-title">
+              Гордон Рамзи
+            </div>
+            <div class="news__blog-text">
+              Меня часто спрашивают: в первую очередь я знаменитость и только потом шеф? Ответ был и будет «нет». Я не
+              для того провел
+              последние двадцать лет на кухне и построил компанию, чтобы сидеть на яхте на юге Франции...»
+            </div>
+          </a>
+          <a class="news__blog">
+            <div class="news__images">
+              <img src="img/news-2.jpg" alt="">
+
+            </div>
+            <div class="news__blog-title">
+              Джейми Оливер
+            </div>
+            <div class="news__blog-text">
+              С едой всё просто: все мы обречены на то, чтобы есть трижды в день до конца жизни. Так давайте есть то,
+              что питательно,
+              вкусно и доставляет удовольствие. По-моему, очень незамысловатая философия...»
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__info">
+              <div class="footer__title">
+                Готовьте с любовью, ешьте с аппетитом!!!
+              </div>
+
+              <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">
+                Обратная связь
+              </a>
+              <ul class="footer__list">
+                <li><a class="footer__phone" href="tel:+37377840900">+373 778 40 900</a></li>
+                <li><a href="#">egor.stavnich@gmail.com</a></li>
+                <li><a class="footer__adress" href="#">г.Тирасполь пер.Раевского 6</a></li>
+              </ul>
+            </div>
+            <div class="footer__map">
+              <iframe height="250px"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2729.3206197209174!2d29.582662215593782!3d46.83737797914109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c903a89c65e49d%3A0xe6eaaafcb0eb5f2b!2zUmF5ZXZza3kgTG4gNiwgVGlyYXNwb2wsINCc0L7Qu9C00LDQstC40Y8!5e0!3m2!1sru!2s!4v1591482464163!5m2!1sru!2s"
+                frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copy">
+        <div class="container">
+          <div class="copy__text">
+            ©ГОТОВИТЬ МОЖЕТ КАЖДЫЙ
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="modal">
+      <form>
+        <input type="text" placeholder="Ваше имя">
+        <input type="text" placeholder="Ваш телефон">
+        <input type="submit" value="Отправить">
+      </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+
+</html>
